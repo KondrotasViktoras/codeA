@@ -1,0 +1,81 @@
+html {
+  font-family: "Bruno Ace", cursive;
+  font-family: "Kablammo", cursive;
+  font-family: "Roboto", sans-serif;
+  background-color: #2f4f4f;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+h3 > span {
+  background-color: violet;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:read-only {
+  background-color: gray;
+}
+input[type="text"] {
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid rgb(110, 106, 106);
+  border-right: 3px solid rgb(110, 106, 106);
+  margin-bottom: 1rem;
+}
+
+input[type="text"]::placeholder {
+  color: black;
+  font-weight: 900;
+}
+
+.nameBig {
+  font-weight: 900;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+  border-top: 3px solid red;
+  border-left: 3px solid pink;
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+  margin-bottom: 1rem;
+}
+input:in-range {
+  border: 3px solid green;
+}
+
+input:out-of-range {
+  border: 3px solid red;
+}
+input[type="checkbox"] {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: green;
+  color: white;
+}
+button:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+  color: blue;
+}
+
+/* input[type="email"]:invalid,
+input[type="password"]:invalid {
+  border: 3px solid red;
+} */
+
+input[type="email"]:valid,
+input[type="password"]:valid {
+  border: 3px solid green;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktų forma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Kablammo&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+   
+  <body>
+    <form action="https://formspree.io/f/xwkdeolk" method="post" target="_blank">
+        <h1>Contact Us!</h1>
+        <label for="name">Name:</label> <br>
+        <input id="name" type="text" required placeholder="Petras" name="name" minlength="3" maxlength="20"> 
+        <br>
+        <label for="email">Email:</label> <br>
+        <input id="email" type="email" placeholder="Petras@petras.lt" required name="email"> 
+        <br>
+        <label for="referenceNumber">Reference Number:</label><br>
+        <input id="referenceNumber" type="number" placeholder="12345" name="referenceNumber">
+        <br>
+        <textarea name="message" id="message" placeholder="Your message goes here..."></textarea>
+        <button type="submit">Send!</button>
+    </form>
+  </body>
+</html>
