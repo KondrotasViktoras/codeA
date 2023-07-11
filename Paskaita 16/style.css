@@ -1,0 +1,117 @@
+body {
+  background-color: #555;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  height: 300px;
+}
+
+.header h1 {
+  font-size: 5rem;
+  position: relative;
+  animation: dropdown;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dropdown {
+  0% {
+    top: -180px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+p {
+  position: relative;
+  animation-name: rules;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rules {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.boxsize {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
+
+.box {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  position: relative;
+  animation: runner 3s infinite linear;
+
+  transition-property: background;
+  transition-delay: 2s;
+  transition-timing-function: linear;
+}
+
+@keyframes runner {
+  0% {
+    left: 0px;
+    top: 0px;
+    border-radius: 50% 0 0 0;
+  }
+  25% {
+    left: 500px;
+    top: 0px;
+    border-radius: 50% 50% 0 0;
+  }
+  50% {
+    left: 250px;
+
+    border-radius: 50% 50% 50% 0;
+  }
+  75% {
+    left: 750px;
+
+    border-radius: 50% 50% 50% 50%;
+  }
+  100% {
+    left: 0px;
+
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+.box:hover {
+  background-color: green;
+}
+.box2 {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: relative;
+  animation: moveBox 5s infinite;
+}
+
+@keyframes moveBox {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 300px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.box2:hover {
+  background-color: red;
+}
