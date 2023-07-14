@@ -57,7 +57,7 @@ p {
   animation: runner 3s infinite linear;
 
   transition-property: background;
-  transition-delay: 2s;
+  transition-delay: 1s;
   transition-timing-function: linear;
 }
 
