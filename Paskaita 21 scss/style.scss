@@ -1,0 +1,128 @@
+:root {
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Kablammo', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+$base-color: #ECECEC;
+$container-color: white;
+
+body {
+    background-color: $base-color;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $container-color;
+    box-shadow: 2px 2px #C9C7C8;
+
+    img {
+        width: 40%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        a {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+main {
+    div {
+        width: 90%;
+        margin: auto;
+        background-color: $container-color;
+        border-radius: 10px;
+        box-shadow: 2px 2px #C9C7C8;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+        color: #5B6769;
+
+        h1 {
+            padding: 1rem;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding: 1rem;
+            padding-left: 0;
+            width: 90%;
+            margin: auto;
+            
+            
+            thead {
+               border-bottom: 1px solid black; 
+               
+            }
+
+            tbody {
+                border-bottom: 1px solid black; 
+                
+            }
+
+            tr {
+                width: 100%;
+                padding: 1rem;
+                
+               
+
+                th {
+                    text-align: left;
+                    padding-bottom: 1rem;
+                    
+                    
+                }
+
+                td {
+                    padding-bottom: 1rem;
+                    padding-top: 1rem;
+                }
+            }
+        }
+
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+.borderbottom {
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 768px){
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        
+    
+        
+    img {
+        width: 10%;
+        margin-left: 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 5%;
+        
+    
+        a {
+            padding-right: 1rem;
+        }
+    }
+    }
+
+}

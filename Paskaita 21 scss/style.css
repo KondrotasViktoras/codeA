@@ -1,0 +1,97 @@
+:root {
+  font-family: "Bruno Ace", cursive;
+  font-family: "Kablammo", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #ECECEC;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 2px #C9C7C8;
+}
+header img {
+  width: 40%;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav a {
+  margin-bottom: 1rem;
+}
+
+main div {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px #C9C7C8;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  color: #5B6769;
+}
+main div h1 {
+  padding: 1rem;
+  margin: 0;
+}
+main div table {
+  border-collapse: collapse;
+  padding: 1rem;
+  padding-left: 0;
+  width: 90%;
+  margin: auto;
+}
+main div table thead {
+  border-bottom: 1px solid black;
+}
+main div table tbody {
+  border-bottom: 1px solid black;
+}
+main div table tr {
+  width: 100%;
+  padding: 1rem;
+}
+main div table tr th {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+main div table tr td {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+footer {
+  text-align: center;
+}
+
+.borderbottom {
+  border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header img {
+    width: 10%;
+    margin-left: 5%;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+  }
+  header nav a {
+    padding-right: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
